@@ -3,6 +3,8 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+/airflow_home
+/data
 # C extensions
 *.so
 

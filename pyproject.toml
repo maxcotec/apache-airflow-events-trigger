@@ -1,0 +1,14 @@
+[project]
+name = "local-airflow"
+version = "0.1.0"
+description = "Local Airflow setup"
+requires-python = ">=3.9,<3.13"
+
+dependencies = [
+  "apache-airflow==3.1.5",
+  "apache-airflow-providers-common-messaging==2.0.1",
+  "apache-airflow-providers-apache-kafka==1.11.1"
+]
+
+[tool.uv]
+dev-dependencies = []
