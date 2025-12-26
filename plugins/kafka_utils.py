@@ -2,7 +2,9 @@ import json
 
 
 def process_msg(message):
-    val = json.loads(message.value())
+    raw = message.value()
+    print(f"Raw type: {type(raw)}, raw content: {raw}")
+    val = json.loads(raw)  # may fail if raw is not str/bytes
     print(f"Value in message is {val}")
     return val
 
