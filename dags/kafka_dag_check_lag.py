@@ -9,7 +9,7 @@ from airflow.providers.apache.kafka.triggers.msg_queue import KafkaMessageQueueT
 # Define a trigger that listens to an Apache Kafka message queue
 trigger = KafkaMessageQueueTrigger(
     topics=["temperature"],
-    apply_function="repo.dags.kafka_utils.process_msg",
+    apply_function="kafka_utils.process_msg",
     kafka_config_id="kafka_default",
     apply_function_args=None,
     apply_function_kwargs=None,
