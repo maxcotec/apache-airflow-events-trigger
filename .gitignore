@@ -5,6 +5,8 @@ __pycache__/
 
 /airflow_home
 /data
+/.dev
+.idea
 # C extensions
 *.so
 
